@@ -1,0 +1,157 @@
+#controle{
+  border-radius: 50%;
+  padding: 16px;
+  border: solid black;
+  width: 160px;
+  height: 160px;
+  margin: auto;
+  background-color: whitesmoke;
+}
+
+#X{
+  border-radius: 50%;
+  border: solid black;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: xx-large;
+  margin: auto;
+  background-color: blue;
+}
+
+#Y{
+  border-radius: 50%;
+  border: solid black;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: xx-large;
+  float: left;
+  background-color: green;
+}
+
+#A{
+  border-radius: 50%;
+  border: solid black;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: xx-large;
+  float: right;
+  background-color: red;
+}
+
+#B{
+  border-radius: 50%;
+  border: solid black;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-size: xx-large;
+  clear: both;
+  margin: auto;
+  background-color: yellow;
+}
+
+.barra.esquerda{
+  width: 60%;
+  border: solid black;
+  background-color: red;
+  border-left: none;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  float: left;
+}
+
+.barra.direita{
+  width: 60%;
+  border: solid black;
+  background-color: blue;
+  border-right: none;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  float: right;
+}
+
+#terceiro{
+  clear: both;
+}
+
+.w10{
+  border: solid black;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  width: 10%;
+  border-left: none;
+  border-right: none;
+}
+
+.w80{
+  border: solid black;
+  float: left;
+  text-align: center;
+  box-sizing: border-box;
+  width: 80%;
+}
+
+#quadrados{
+  width: 200px;
+  clear: both;
+}
+
+.esq.topo{
+  border: solid black;
+  width: 100px;
+  height: 100px;
+  float: left;
+  box-sizing: border-box;
+  border-right: none;
+}
+
+.dir.topo{
+  border: solid black;
+  width: 100px;
+  height: 100px;
+  float: left;
+  box-sizing: border-box;
+}
+
+.esq.base{
+  border: solid black;
+  width: 100px;
+  height: 100px;
+  float: left;
+  box-sizing: border-box;
+  border-right: none;
+  border-top: none;
+  line-height: 180px;
+}
+
+.dir.base{
+  border: solid black;
+  width: 100px;
+  height: 100px;
+  float: left;
+  box-sizing: border-box;
+  border-top: none;
+  line-height: 180px;
+}
+
+.meio{
+  border: solid black;
+  width: 100px;
+  height: 100px;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 100px;
+  position: relative;
+  top: -150px;
+  left: 50px;
+  background-color: white;
+}
