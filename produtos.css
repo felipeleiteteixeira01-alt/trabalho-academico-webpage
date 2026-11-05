@@ -1,0 +1,281 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: white;
+  color: #222;
+}
+
+a{
+  text-decoration: none; color: inherit;
+}
+
+#headerPromo{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#cabecalhoPrincipal{
+  padding: 3vh;
+}
+
+#topoCabecalho{
+  display: flex;
+  align-items: center;
+}
+
+#matriz{
+  width: 200px;
+}
+
+#barraPesquisa{
+  border: 1px solid gray;
+  margin-left: 5vh;
+  padding: 5px;
+  flex: 1;
+  color: lightslategray;
+  text-align: center;
+}
+
+#navPrincipal{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.linkNav{
+  margin-right: 50px;
+}
+
+#migalhas{
+  max-width: 1100px;
+  margin: 10px auto 0;
+  padding: 0 20px;
+  font-size: 14px;
+  color: #777;
+}
+
+#migalhas a:hover{
+  text-decoration: underline;
+}
+
+#produtoPagina{
+  display: flex;
+  gap: 50px;
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+  align-items: flex-start;
+}
+
+#fotoProduto{
+  flex: 1;
+  border: 1px solid #e5e5e5;
+  padding: 20px;
+}
+
+#fotoProduto img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#infoProduto{
+  flex: 1;
+}
+
+#infoProduto h1{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.codigo{
+  margin-top: 6px;
+  font-size: 13px;
+  color: #888;
+}
+
+.preco{
+  margin-top: 24px;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.parcelas{
+  margin-top: 4px;
+  color: #555;
+}
+
+.desconto{
+  margin-top: 4px;
+  font-size: 14px;
+  color: #2e7d32;
+}
+
+.grupo{
+  margin-top: 28px;
+}
+
+.grupo > p{
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.opcoes{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.opcoes input{
+  position: absolute;
+  opacity: 0;
+}
+
+.opcoes label{
+  min-width: 52px;
+  padding: 10px 14px;
+  border: 1px solid #ccc;
+  text-align: center;
+  cursor: pointer;
+}
+
+.opcoes label:hover{
+  border-color: #333;
+}
+
+.opcoes input:checked + label{
+  background-color: black;
+  border-color: black;
+  color: white;
+}
+
+.opcoes input:focus-visible + label{
+  outline: 2px solid #333;
+  outline-offset: 2px;
+}
+
+.compra{
+  display: flex;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.compra input[type="number"]{
+  width: 80px;
+  padding: 14px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  text-align: center;
+}
+
+.botaoComprar{
+  flex: 1;
+  display: block;
+  padding: 16px;
+  background-color: greenyellow;
+  color: black;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.botaoComprar:hover{
+  background-color: #b5f01f;
+}
+
+.frete{
+  display: flex;
+  gap: 8px;
+}
+
+.frete input{
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.frete button{
+  padding: 12px 20px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.notaFrete{
+  margin-top: 8px;
+  font-size: 13px;
+  color: #777;
+}
+
+#descricao{
+  max-width: 1100px;
+  margin: 0 auto 40px;
+  padding: 30px 20px 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+#descricao h2{
+  font-size: 20px;
+  margin-bottom: 14px;
+}
+
+#descricao p{
+  line-height: 1.6;
+  max-width: 70ch;
+}
+
+#descricao ul{
+  margin-top: 14px;
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+#rodape{
+  display: flex;
+  margin-top: 30px;
+  padding: 30px 20px 20px;
+  background-color: lightgray;
+}
+
+.teste2{
+  flex: 1;
+}
+.teste2 ul{
+  list-style: none;
+}
+
+.teste2 li{
+  margin-bottom: 8px;
+}
+
+@media (max-width: 768px){
+
+  #produtoPagina, #rodape{
+    flex-direction: column;
+  }
+
+  #topoCabecalho{
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #barraPesquisa{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .linkNav{
+    margin: 0 10px;
+  }
+
+}

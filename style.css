@@ -1,21 +1,284 @@
 * {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: #1b2838;
+  background-color: white;
 }
 
-.cabecalhoPrincipal{
-  background-color: #171a21;
-  width: 100%;
-  height: 120px;
+a{
+  text-decoration: none;
 }
 
-.logoSteam{
+/* CABEÇALHO DA PÁGINA PRINCIPAL */
+
+#headerPromo{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#topoCabecalho{
+  display: flex;
+}
+
+#cabecalhoPrincipal{
+  padding: 3vh;
+}
+
+#matriz{
   width: 200px;
+}
 
+#barraPesquisa{
+  border: 1px solid gray;
+  margin-left: 5vh;
+  padding: 5px;
+  flex: 1;
+  color: lightslategray;
+  text-align: center;
+}
+
+#navPrincipal{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.linkNav{
+  margin-right: 50px;
+}
+
+/* SEÇÃO 1 - ROLAGEM DE MARCAS / MODELOS */
+
+#containerModelo{
+  overflow: hidden;
+}
+
+#slidesModelo {
+  width: max-content;
+  animation: rolagem 20s linear infinite;
+}
+
+#slidesModelo img {
+  width: 100vh;
+  height: 50vh;
+  margin-right: 20px;
+}
+
+@keyframes rolagem {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* SEÇÃO 2 e 4 - TEXTO SIMPLES */
+
+.textoSimples{
+  margin-top: 50px;
+  text-align: center;
+  color: #707070;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+#logoMarcas{
+  text-align: center;
+  margin-top: 50px;
+}
+
+#logoMarcas img{
+  margin-right: 100px;
+}
+
+/* SEÇÃO 3 - TABLE DE PRODUTOS */
+
+#tabelaProdutos {
+  margin: auto;
+  margin-top: 50px;
+  border-spacing: 8px;
+  width: 90%;
+  max-width: 1200px;
+  table-layout: fixed;
+}
+
+#tabelaProdutos td:not([rowspan]) img{  
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#tabelaProdutos td[rowspan]{
+  position: relative;
+}
+
+#tabelaProdutos td[rowspan] img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* SEÇÃO 5 - ATLETAS */
+
+#ATLETAS table{
+  margin: auto;
+}
+
+#ATLETAS iframe{
+  margin-top: 30px;
+  margin-right: 10px;
+}
+
+/* SEÇÃO 6 - PRODUTOS EM DESTAQUE */
+
+#containerProdutos{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.produto{
+  width: 220px;
+  text-align: center;
+}
+
+.descricaoProduto{
+  text-align: center;
+  font-weight: 500;
+  color: #333333;
+}
+
+.precoProduto{
+  font-weight: 500;
+  text-align: center;
+}
+
+#produtosDestaque img{
+  max-width: 200px;
+  margin: 15px;
+}
+
+.produto:hover{
+  border: 1px solid #cccccc;
+  box-shadow: 4px 4px 10px gray;
+}
+
+.adicionarNoCarrinho{
+  display: none;
+}
+
+.produto:hover .adicionarNoCarrinho{
+  display: block;
+  margin-top: 10px;
+  padding: 5px;
+  color: black;
+  background-color: greenyellow;
+}
+
+/* SEÇÃO 7 - RODAPÉ */
+
+#rodape{
+  display: flex;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-left: 20px;
+  background-color: lightgray;
+  padding-bottom: 20px;
+}
+
+.teste2{
+  flex: 1;
+}
+
+.teste2 ul{
+  list-style: none;
+}
+
+.teste2 li{
+  margin-bottom: 8px;
+}
+
+#ATLETAS iframe{
+  max-width: 100%;
+}
+
+@media (max-width: 768px){
+
+  #topoCabecalho{
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  #barraPesquisa{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .linkNav{
+    display: inline-block;
+    margin: 0 10px 8px;
+  }
+
+  #slidesModelo img{
+    width: 90vw;
+    height: 45vw;
+  }
+
+  .textoSimples{
+    font-size: 22px;
+    padding: 0 10px;
+  }
+
+  #logoMarcas img{
+    margin: 0 15px 15px;
+  }
+
+
+  #tabelaProdutos, #tabelaProdutos tbody,
+  #tabelaProdutos tr, #tabelaProdutos td {
+    display: block;
+  }
+
+  #tabelaProdutos td{
+    margin-bottom: 8px;
+  }
+
+  #tabelaProdutos td[rowspan]{
+    height: 300px;
+  }
+
+  #ATLETAS table, #ATLETAS tbody,
+  #ATLETAS tr, #ATLETAS td {
+    display: block;
+  }
+
+  #ATLETAS iframe {
+    width: 100%; height: auto; aspect-ratio: 16 / 9; margin-right: 0;
+  }
+
+  #rodape{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+}
+
+@media (hover: none){
+  .adicionarNoCarrinho{
+    display: block;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: greenyellow;
+    color: black;
+  }
 }

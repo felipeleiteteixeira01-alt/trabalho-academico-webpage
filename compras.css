@@ -1,0 +1,199 @@
+*{
+  box-sizing: border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background-color: whitesmoke;
+}
+
+a{
+  text-decoration: none;
+}
+
+#headerPromo{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+#topoCabecalho{
+  display: flex;
+}
+
+#matriz{
+  width: 200px;
+  margin-left: 20px;
+}
+
+#barraPesquisa{
+  margin-left: 5vh;
+  padding: 5px;
+  flex: 1;
+  font-size: 48px;
+  text-align: center;
+  visibility: hidden;
+}
+
+#carrinho{
+  width: 64px;
+  margin-right: 20px;
+}
+
+#cabecalhoPrincipal{
+  background-color: white;
+}
+
+body{
+  background-color: #f4f4f4;
+}
+
+#checkout{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+#colunaEtapas{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+#colunaResumo{
+  flex: 1;
+}
+
+.card{
+  background-color: white;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  padding: 28px;
+}
+
+.card h3{
+  font-weight: 500;
+  font-size: 22px;
+  margin-bottom: 24px;
+}
+
+.etapaFechada{
+  background-color: #fafafa;
+  padding: 24px 28px;
+}
+
+.etapaFechada h3{
+  color: #777;
+  margin-bottom: 0;
+}
+
+.card label{
+  display: block;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.card input[type="email"]{
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 16px;
+}
+
+.card small{
+  display: block;
+  margin-top: 8px;
+  font-size: 13px;
+  color: #666;
+}
+
+.checkboxNews{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 28px 0;
+  font-size: 16px;
+  letter-spacing: normal;
+  color: #222;
+}
+
+#btnContinuar{
+  width: 100%;
+  padding: 22px;
+  background-color: #333;
+  color: white;
+  border: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.itemPedido{
+  display: flex;
+  gap: 16px;
+  padding-bottom: 20px;
+}
+
+.itemPedido img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid #e5e5e5;
+}
+
+.infoItem{
+  flex: 1;
+}
+
+.precoItem{
+  text-align: right;
+}
+
+.precoItem a{
+  font-size: 13px;
+  color: #777;
+  text-decoration: underline;
+}
+
+.linhaValor{
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+.linhaValor.total{
+  border-top: 1px solid #e5e5e5;
+  margin-top: 10px;
+  padding-top: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.selo{
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 1px;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px){
+  #checkout { flex-direction: column; margin: 20px auto; }
+  #colunaEtapas, #colunaResumo { width: 100%; }
+  .card { padding: 20px; }
+  #matriz { width: 140px; margin-left: 0; }
+  #carrinho { width: 40px; margin-right: 0; }
+  .itemPedido { flex-wrap: wrap; }
+}
