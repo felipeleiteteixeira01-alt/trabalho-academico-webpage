@@ -243,7 +243,6 @@ a{
     margin: 0 15px 15px;
   }
 
-
   #tabelaProdutos, #tabelaProdutos tbody,
   #tabelaProdutos tr, #tabelaProdutos td {
     display: block;
@@ -253,17 +252,16 @@ a{
     margin-bottom: 8px;
   }
 
-  #tabelaProdutos td[rowspan]{
-    height: 300px;
-  }
-
   #ATLETAS table, #ATLETAS tbody,
-  #ATLETAS tr, #ATLETAS td {
+  #ATLETAS tr, #ATLETAS td{
     display: block;
   }
 
-  #ATLETAS iframe {
-    width: 100%; height: auto; aspect-ratio: 16 / 9; margin-right: 0;
+  #ATLETAS iframe{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    margin-right: 0;
   }
 
   #rodape{

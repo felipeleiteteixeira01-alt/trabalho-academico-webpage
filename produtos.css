@@ -11,7 +11,7 @@ body{
 }
 
 a{
-  text-decoration: none; color: inherit;
+  text-decoration: none;
 }
 
 #headerPromo{
@@ -52,7 +52,7 @@ a{
   margin-right: 50px;
 }
 
-#migalhas{
+#menu{
   max-width: 1100px;
   margin: 10px auto 0;
   padding: 0 20px;
@@ -60,7 +60,7 @@ a{
   color: #777;
 }
 
-#migalhas a:hover{
+#menu a:hover{
   text-decoration: underline;
 }
 
@@ -70,7 +70,6 @@ a{
   max-width: 1100px;
   margin: 30px auto;
   padding: 0 20px;
-  align-items: flex-start;
 }
 
 #fotoProduto{
@@ -80,9 +79,7 @@ a{
 }
 
 #fotoProduto img{
-  display: block;
   width: 100%;
-  height: auto;
 }
 
 #infoProduto{
@@ -155,11 +152,6 @@ a{
   background-color: black;
   border-color: black;
   color: white;
-}
-
-.opcoes input:focus-visible + label{
-  outline: 2px solid #333;
-  outline-offset: 2px;
 }
 
 .compra{
@@ -250,6 +242,7 @@ a{
 .teste2{
   flex: 1;
 }
+
 .teste2 ul{
   list-style: none;
 }

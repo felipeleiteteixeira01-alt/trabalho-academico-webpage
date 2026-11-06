@@ -33,7 +33,6 @@ a{
   margin-left: 5vh;
   padding: 5px;
   flex: 1;
-  font-size: 48px;
   text-align: center;
   visibility: hidden;
 }
@@ -62,8 +61,8 @@ body{
 }
 
 #colunaEtapas{
-  flex: 1;
   display: flex;
+  flex: 1;
   flex-direction: column;
   gap: 24px;
 }
@@ -119,7 +118,6 @@ body{
 }
 
 .checkboxNews{
-  display: flex;
   align-items: center;
   gap: 12px;
   margin: 28px 0;
@@ -190,10 +188,21 @@ body{
 }
 
 @media (max-width: 768px){
-  #checkout { flex-direction: column; margin: 20px auto; }
-  #colunaEtapas, #colunaResumo { width: 100%; }
-  .card { padding: 20px; }
-  #matriz { width: 140px; margin-left: 0; }
-  #carrinho { width: 40px; margin-right: 0; }
-  .itemPedido { flex-wrap: wrap; }
+  #checkout {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
+  #colunaEtapas, #colunaResumo{
+    width: 100%;
+  }
+
+  .card{
+    padding: 20px;
+  }
+
+  #matriz{
+    width: 140px;
+    margin-left: 0;
+  }
 }
